@@ -8,5 +8,13 @@ get "/layout" do
   erb :layout
 end
 get "/results" do
+  def result
+    books = GoogleBooks.search("#{params[:search]}")
+    firstBook = books.first
+    @title = firstBook.title
+    @author = firstBook.authors
+    @image = firstBook.image_link
+  end
+  result()
   erb :results
 end
