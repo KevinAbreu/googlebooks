@@ -14,6 +14,7 @@ get "/results" do
     @title = firstBook.title
     @author = firstBook.authors
     @image = firstBook.image_link
+    @link = firstBook.info_link
   end
   result()
   erb :results

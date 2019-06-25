@@ -1,0 +1,18 @@
+.txtaln{
+  font-family: monospace;
+  text-align: center;
+  font-size: 2em;
+}
+
+.imgaln{
+  position: relative;
+  left: 35vw;
+}
+
+.mono{
+  position: relative;
+  font-family: monospace;
+  font-size: 3em;
+  margin: 2%;
+  text-decoration: none;
+}
